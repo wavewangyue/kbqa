@@ -1,4 +1,4 @@
-# kbqa
+# 基于知识库的问答：seq2seq模型实践 2018.03.15
 
 完整文档转到知乎专栏: [https://zhuanlan.zhihu.com/p/34585912](https://zhuanlan.zhihu.com/p/34585912)
 
@@ -25,6 +25,8 @@ SimpleQuestions & WebQuestions 学术界问答领域比较喜闻乐见的两个�
 ## 工具：
 
 Pytorch
+
+word2vec (WikiAnswers 数据预训练) 模型下载：https://pan.baidu.com/s/1DNlPPqeYnkPldmJLnyAiwA
 
 ## 依照惯例，还是先上结论
 
