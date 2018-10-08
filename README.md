@@ -36,7 +36,7 @@ Pytorch
 
 简单的 seq2seq 效果还不错，虽然跟学术界目前最好成绩有很大差距，但是还不错。后来我又加入了一些比如 KB embedding，turbo training 等一言难尽的补丁上去，变成现在的 APVA-TURBO 模型，在 WebQuestions 上已经快领先 8 个点了，但是文章里不提了，太乱了，直接发一个论文链接，感兴趣的可以深入研究
 
-http://aclweb.org/anthology/C18-1170
+> [The APVA-TURBO Approach To Question Answering in Knowledge Base. Yue Wang, Richong Zhang, Cheng Xu and Yongyi Mao. Published 2018 in COLING](http://aclweb.org/anthology/C18-1170)
 
 无关的吐槽发泄一下：论文在半个月前投 ACL2018 的，然后因为段落的格式问题被拒了（是的，因为格式问题，WTF？？？），快毕业了 A 没有了太遗憾了，现在准备这星期投 COLING 2018，都是命啊
 
