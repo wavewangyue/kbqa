@@ -1,8 +1,10 @@
 # kbqa
-[完整文档转到知乎专栏](https://zhuanlan.zhihu.com/p/34585912)
+
+完整文档转到知乎专栏: [https://zhuanlan.zhihu.com/p/34585912](https://zhuanlan.zhihu.com/p/34585912)
 
 ## 问题描述
-基于知识图谱的自动问答（Question Answering over Knowledge Base, 即 KBQA）问题的大概形式是，预先给定一个知识库（比如Freebase），知识库中包含着大量的先验知识数据，然后利用这些知识资源自动回答自然语言形态的问题（比如“肉夹馍是江苏的美食吗”，“虵今年多大了”等人民群众喜闻乐见的问题）。
+
+基于知识图谱的自动问答（Question Answering over Knowledge Base, 即 KBQA）问题的大概形式是，预先给定一个知识库（比如Freebase），知识库中包含着大量的先验知识数据，然后利用这些知识资源自动回答自然语言形态的问题（比如“肉夹馍是哪里的美食”，“虵今年多大了”等人民群众喜闻乐见的问题）。
 
 ## 方法框架
 
@@ -17,6 +19,7 @@ people.person.place_of_birth, m.s1kjds>”，那么这条三元组的尾实体�
 ## 数据集：
 
 SimpleQuestions & WebQuestions 学术界问答领域比较喜闻乐见的两个数据集了，相当权威
+
 另外，知识库用的是 Freebase ，业界最权威的知识库之一了
 
 ## 工具：
@@ -24,9 +27,17 @@ SimpleQuestions & WebQuestions 学术界问答领域比较喜闻乐见的两个�
 Pytorch
 
 ## 依照惯例，还是先上结论
+
 从 tensorflow 转过来发现，pytorch 真好用
+
 问答问题目前的解决方法，框架基本都是上面说那四步，但是具体做法五花八门，模型各式各样，文中所用的 seq2seq 也只是一个简单实践，效果上比较如下图（out-of-state now 是业界目前最好结果，APVA-TURBO 是我最近在做的一篇论文）
-简单的 seq2seq 效果还不错，虽然跟学术界目前最好成绩有很大差距，但是还不错。后来我又加入了一些比如 KB embedding，turbo training 等一言难尽的补丁上去，变成现在的 APVA-TURBO 模型，在 WebQuestions 上已经快领先 8 个点了，但是文章里不提了，太乱了，以后论文发了的话补个链接
+
+![](https://pic2.zhimg.com/v2-c6e62c0c354967e216c573200c1a7184_b.jpg)
+
+简单的 seq2seq 效果还不错，虽然跟学术界目前最好成绩有很大差距，但是还不错。后来我又加入了一些比如 KB embedding，turbo training 等一言难尽的补丁上去，变成现在的 APVA-TURBO 模型，在 WebQuestions 上已经快领先 8 个点了，但是文章里不提了，太乱了，直接发一个论文链接，感兴趣的可以深入研究
+
+http://aclweb.org/anthology/C18-1170
+
 无关的吐槽发泄一下：论文在半个月前投 ACL2018 的，然后因为段落的格式问题被拒了（是的，因为格式问题，WTF？？？），快毕业了 A 没有了太遗憾了，现在准备这星期投 COLING 2018，都是命啊
 
 还是想说，pytorch 真好用啊真好用
