@@ -1,6 +1,6 @@
 # 基于知识库的问答：seq2seq模型实践 2018.03.15
 
-完整文档转到知乎专栏: [https://zhuanlan.zhihu.com/p/34585912](https://zhuanlan.zhihu.com/p/34585912)
+查看完整文档: [https://zhuanlan.zhihu.com/p/34585912](https://zhuanlan.zhihu.com/p/34585912)
 
 ## 问题描述
 
