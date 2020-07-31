@@ -18,9 +18,9 @@ people.person.place_of_birth, m.s1kjds>”，那么这条三元组的尾实体�
 
 ## 数据集：
 
-SimpleQuestions & WebQuestions 学术界问答领域比较喜闻乐见的两个数据集了，相当权威
+SimpleQuestions & WebQuestions 学术界问答领域比较喜闻乐见的两个数据集
 
-另外，知识库用的是 Freebase ，业界最权威的知识库之一了
+另外，知识库用的是 Freebase
 
 ## 工具：
 
@@ -40,6 +40,3 @@ word2vec (WikiAnswers 数据预训练) 模型下载：https://pan.baidu.com/s/1D
 
 > [The APVA-TURBO Approach To Question Answering in Knowledge Base. Yue Wang, Richong Zhang, Cheng Xu and Yongyi Mao. Published 2018 in COLING](http://aclweb.org/anthology/C18-1170)
 
-无关的吐槽发泄一下：论文在半个月前投 ACL2018 的，然后因为段落的格式问题被拒了（是的，因为格式问题，WTF？？？），快毕业了 A 没有了太遗憾了，现在准备这星期投 COLING 2018，都是命啊
-
-还是想说，pytorch 真好用啊真好用
