@@ -30,13 +30,16 @@ word2vec (WikiAnswers 数据预训练) 模型下载：https://pan.baidu.com/s/1D
 
 ## 依照惯例，还是先上结论
 
-从 tensorflow 转过来发现，pytorch 真好用
+KBQA 的解决方法有两个方向
 
-问答问题目前的解决方法，框架基本都是上面说那四步，但是具体做法五花八门，模型各式各样，文中所用的 seq2seq 也只是一个简单实践，效果上比较如下图（out-of-state now 是业界目前最好结果，APVA-TURBO 是我最近在做的一篇论文）
+1. 通过逻辑表达式直接生成 SPARQL（数据库查询语言，类似 SQL 那种）查数据库
+2. 就是按上面说的框架那四步，我也是按照这个框架来做
+
+具体做法五花八门，模型各式各样，文中所用的 seq2seq 也只是一个简单实践，效果上比较如下图（out-of-state now 是业界目前最好结果，APVA-TURBO 是我最近在做的一篇论文）
 
 ![](https://pic2.zhimg.com/v2-c6e62c0c354967e216c573200c1a7184_b.jpg)
 
-简单的 seq2seq 效果还不错，虽然跟学术界目前最好成绩有很大差距，但是还不错。后来我又加入了一些比如 KB embedding，turbo training 等一言难尽的补丁上去，变成现在的 APVA-TURBO 模型，在 WebQuestions 上已经快领先 8 个点了，但是文章里不提了，太乱了，直接发一个论文链接，感兴趣的可以深入研究
+简单的 seq2seq 效果还不错，虽然跟学术界目前最好成绩有很大差距，但是还不错。后来我又加入了一些比如 KB embedding，Verification Mechanism，Turbo Training 等补丁上去，变成现在的 APVA-TURBO 模型，在 WebQuestions 上已经快领先 8 个点了，发一个论文链接，感兴趣的可以深入研究
 
 > [The APVA-TURBO Approach To Question Answering in Knowledge Base. Yue Wang, Richong Zhang, Cheng Xu and Yongyi Mao. Published 2018 in COLING](http://aclweb.org/anthology/C18-1170)
 
