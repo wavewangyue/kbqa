@@ -22,9 +22,9 @@ SimpleQuestions & WebQuestions 学术界问答领域比较喜闻乐见的两个�
 
 另外，知识库用的是 Freebase
 
-## 工具：
+## 环境：
 
-Pytorch
+Python3, Pytorch0.4.1
 
 word2vec (WikiAnswers 数据预训练) 模型下载：https://pan.baidu.com/s/1DNlPPqeYnkPldmJLnyAiwA
 
